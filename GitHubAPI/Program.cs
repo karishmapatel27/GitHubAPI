@@ -40,7 +40,6 @@ namespace GitHubAPI
             {
                 string name = item.GetValue("name").
                     ToString();
-                // OR string name = (string)item.GetValue("name");
                 Console.WriteLine(counter + "." + name);
                 counter++;
             }
