@@ -14,7 +14,7 @@ namespace GitHubAPI
         static async Task Main(string[] args)
         {
             // Create a service collection for DI
-            var serviceCollection = new ServiceCollection();
+            //var serviceCollection = new ServiceCollection();
 
             //build configuration
             IConfiguration configuration;
@@ -31,7 +31,7 @@ namespace GitHubAPI
             var client = new RestClient();
             client.Authenticator = new HttpBasicAuthenticator(userName, password);
 
-            var request = new RestRequest(url, Method.Get);
+            var request = new RestRequest(url);
             var response = await client.ExecuteAsync(request);
 
             var names = response.Content;
@@ -43,7 +43,6 @@ namespace GitHubAPI
                 Console.WriteLine(counter + "." + name);
                 counter++;
             }
-
             Console.Read();
         }
     }
