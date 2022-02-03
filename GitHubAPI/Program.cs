@@ -13,9 +13,6 @@ namespace GitHubAPI
     {
         static async Task Main(string[] args)
         {
-            // Create a service collection for DI
-            //var serviceCollection = new ServiceCollection();
-
             //build configuration
             IConfiguration configuration;
             configuration = new ConfigurationBuilder()
