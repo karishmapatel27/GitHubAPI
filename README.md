@@ -9,3 +9,10 @@
 
 - RestSharp v107.1.2
 - Newtonsoft.json v13.0.1
+- Microsoft.Extensions.Configuration
+- Microsoft.Extensions.Configuration.FileExtensions
+
+
+
+
+
